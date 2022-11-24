@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.edcd.EDMarketConnector</id>
+  
+  <name>E:D Market Connector</name>
+  <summary>Downloads commodity market and other station data from the game Elite: Dangerous for use with all popular online and offline trading tools.</summary>
+  <developer_name>EDCD - Elite Dangerous Community Developers</developer_name>
+
+  <metadata_license>MIT</metadata_license>
+  <project_license>GPL-2.0-only</project_license>
+  
+  <releases>
+    <release version="5.5.0" date="2022-09-26"/>
+  </releases>
+
+  <description>
+    <p>
+      Downloads commodity market and other station data from the game Elite: Dangerous for use with all popular online and offline trading tools.
+    </p>
+  </description>
+  
+  <launchable type="desktop-id">io.edcd.EDMarketConnector.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/EDCD/EDMarketConnector/main/img/win_dark.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/EDCD/EDMarketConnector/main/img/UI-Athanasius-101-odyssey-docked-onfoot-cooled-down-l.png</image>
+    </screenshot>
+  </screenshots>
+</component>

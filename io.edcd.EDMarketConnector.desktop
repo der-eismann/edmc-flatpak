@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=EDMarketConnector
+Exec=python3 /app/edmc/EDMarketConnector.py
+Terminal=false
+Icon=io.edcd.EDMarketConnector
+Type=Application
+Categories=Games;
+X-Desktop-File-Install-Version=0.21

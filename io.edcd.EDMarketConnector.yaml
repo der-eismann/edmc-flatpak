@@ -1,0 +1,39 @@
+app-id: io.edcd.EDMarketConnector
+runtime: org.freedesktop.Platform
+runtime-version: '22.08'
+command: edmc
+sdk: org.freedesktop.Sdk
+finish-args:
+  - --socket=x11
+  - --share=network
+  - --filesystem=host
+modules:
+  - python3-requirements.yaml
+
+  - python3-tkinter.yaml
+
+  - name: edmc
+    buildsystem: simple
+    build-commands:
+      - mkdir edmc
+      - tar xzfv edmc.tar.gz --directory=edmc/ --strip-components=1
+      - rm -rf edmc/tests edmc/img
+      - install -dm755 ${FLATPAK_DEST}/edmc
+      - install -dm755 ${FLATPAK_DEST}/bin
+      - cp -r edmc/* ${FLATPAK_DEST}/edmc
+      - install edmc.sh ${FLATPAK_DEST}/bin/edmc
+      - install -t ${FLATPAK_DEST}/share/appdata/ -Dm644 io.edcd.EDMarketConnector.appdata.xml
+      - install -t ${FLATPAK_DEST}/share/applications/ -Dm644 io.edcd.EDMarketConnector.desktop
+      - install -Dm644 edmc/EDMarketConnector.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png
+      - echo ${FLATPAK_DEST}
+    sources:
+      - type: file
+        url: https://github.com/EDCD/EDMarketConnector/archive/refs/tags/Release/5.5.0.tar.gz
+        sha256: 4517afaef708477ba737d4351706d1d5de2b55a01d85ab1519050b9cda7d093a
+        dest-filename: edmc.tar.gz
+      - type: file
+        path: io.edcd.EDMarketConnector.desktop
+      - type: file
+        path: io.edcd.EDMarketConnector.appdata.xml
+      - type: file
+        path: edmc.sh
