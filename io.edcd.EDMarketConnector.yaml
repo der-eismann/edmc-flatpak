@@ -7,6 +7,10 @@ finish-args:
   - --socket=x11
   - --share=network
   - --filesystem=host
+cleanup:
+  - '/man'
+  - '/include'
+  - '/share/man'
 modules:
   - python3-requirements.yaml
 
