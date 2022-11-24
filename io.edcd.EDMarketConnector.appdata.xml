@@ -1,31 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>io.edcd.EDMarketConnector</id>
-  
-  <name>E:D Market Connector</name>
-  <summary>Downloads commodity market and other station data from the game Elite: Dangerous for use with all popular online and offline trading tools.</summary>
-  <developer_name>EDCD - Elite Dangerous Community Developers</developer_name>
+    <id>io.edcd.EDMarketConnector</id>
 
-  <metadata_license>MIT</metadata_license>
-  <project_license>GPL-2.0-only</project_license>
-  
-  <releases>
-    <release version="5.5.0" date="2022-09-26"/>
-  </releases>
+    <name>E:D Market Connector</name>
+    <summary>Updates the EDDN with data from your game</summary>
+    <developer_name>EDCD - Elite Dangerous Community Developers</developer_name>
 
-  <description>
-    <p>
+    <metadata_license>MIT</metadata_license>
+    <project_license>GPL-2.0-only</project_license>
+
+    <releases>
+        <release version="5.5.0" date="2022-09-26">
+            <description>
+                <p>Bug Fixes</p>
+                <ul>
+                    <li>EDDN: Abort fsssignaldiscovered sending of message if no signals passed the checks.</li>
+                    <li>EDDN: Add Horizons check for location on fsssignaldiscovered messages.</li>
+                    <li>Don't alert the user if the first attempted load of NavRoute.json contains no route.</li>
+                    <li>Inara: Don't set marketID for ApproachSettlement unless it's actually present in the event.</li>
+                </ul>
+            </description>
+        </release>
+    </releases>
+
+    <description>
+        <p>
       Downloads commodity market and other station data from the game Elite: Dangerous for use with all popular online and offline trading tools.
     </p>
-  </description>
-  
-  <launchable type="desktop-id">io.edcd.EDMarketConnector.desktop</launchable>
-  <screenshots>
-    <screenshot type="default">
-      <image>https://raw.githubusercontent.com/EDCD/EDMarketConnector/main/img/win_dark.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/EDCD/EDMarketConnector/main/img/UI-Athanasius-101-odyssey-docked-onfoot-cooled-down-l.png</image>
-    </screenshot>
-  </screenshots>
+    </description>
+
+    <url type="homepage">https://github.com/EDCD/EDMarketConnector</url>
+    <url type="help">https://github.com/EDCD/EDMarketConnector/wiki</url>
+    <url type="bugtracker">https://github.com/EDCD/EDMarketConnector/issues</url>
+    <url type="translate">https://marginal.oneskyapp.com/collaboration/project?id=52710</url>
+
+    <launchable type="desktop-id">io.edcd.EDMarketConnector.desktop</launchable>
+    <screenshots>
+        <screenshot type="default">
+            <image>https://raw.githubusercontent.com/EDCD/EDMarketConnector/main/img/win_dark.png</image>
+        </screenshot>
+        <screenshot>
+            <image>https://raw.githubusercontent.com/EDCD/EDMarketConnector/main/img/UI-Athanasius-101-odyssey-docked-onfoot-cooled-down-l.png</image>
+        </screenshot>
+    </screenshots>
 </component>
