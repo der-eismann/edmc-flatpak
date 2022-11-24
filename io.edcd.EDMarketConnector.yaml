@@ -13,6 +13,7 @@ cleanup:
   - '/man'
   - '/include'
   - '/share/man'
+  - '/lib/pkgconfig'
 modules:
   - python3-requirements.yaml
 
