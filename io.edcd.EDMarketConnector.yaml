@@ -29,7 +29,6 @@ modules:
       - install -t ${FLATPAK_DEST}/share/appdata/ -Dm644 io.edcd.EDMarketConnector.appdata.xml
       - install -t ${FLATPAK_DEST}/share/applications/ -Dm644 io.edcd.EDMarketConnector.desktop
       - install -Dm644 edmc/EDMarketConnector.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png
-      - echo ${FLATPAK_DEST}
     sources:
       - type: file
         url: https://github.com/EDCD/EDMarketConnector/archive/refs/tags/Release/5.5.0.tar.gz
