@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=EDMarketConnector
+Name=E:D Market Connector
 Exec=/usr/bin/python3 /app/edmc/EDMarketConnector.py
 Terminal=false
 Icon=io.edcd.EDMarketConnector
