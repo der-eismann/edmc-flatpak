@@ -10,14 +10,15 @@
     <project_license>GPL-2.0-only</project_license>
 
     <releases>
-        <release version="5.5.0" date="2022-09-26">
+        <release version="5.6.1" date="2022-12-02">
             <description>
-                <p>Bug Fixes</p>
+                <p>Changes</p>
                 <ul>
-                    <li>EDDN: Abort fsssignaldiscovered sending of message if no signals passed the checks.</li>
-                    <li>EDDN: Add Horizons check for location on fsssignaldiscovered messages.</li>
-                    <li>Don't alert the user if the first attempted load of NavRoute.json contains no route.</li>
-                    <li>Inara: Don't set marketID for ApproachSettlement unless it's actually present in the event.</li>
+                    <li>CAPI queries will now only be attempted for Live galaxy players.</li>
+                    <li>EDDN: Where data has been sourced from the CAPI this application now sends a header->gameversion in the format "CAPI-(Live|Legacy)-endpoint" as per the updated documentation.</li>
+                    <li>Inara: Only warn about Legacy data if sending is enabled in Settings > Inara.</li>
+                    <li>Inara: Handling of some events has had a sanity check added so that the Inara API doesn't complain about empty strings being sent. In these cases the event will simply not be sent.</li>
+                    <li>EDSM: EDSM has decided to accept only Live data on its API. Thus, this application will only attempt to send data for Live galaxy players.</li>
                 </ul>
             </description>
         </release>
