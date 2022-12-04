@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=E:D Market Connector
-Exec=/usr/bin/python3 /app/edmc/EDMarketConnector.py
+Exec=/usr/bin/python3 /app/edmarketconnector/EDMarketConnector.py
 Terminal=false
 Icon=io.edcd.EDMarketConnector
 Type=Application
