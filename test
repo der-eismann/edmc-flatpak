@@ -1,1 +1,4 @@
 ~/.var/app/io.edcd.EDMarketConnector/data/EDMarketConnector/plugins
+
+config:
+~/.var/app/io.edcd.EDMarketConnector/config/EDMarketConnector
