@@ -6,12 +6,12 @@ modules:
     buildsystem: simple
     build-commands:
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "certifi==2022.9.14" --no-build-isolation
+        --prefix=${FLATPAK_DEST} "certifi==2022.12.7" --no-build-isolation
     sources:
       - &id001
         type: file
-        url: https://files.pythonhosted.org/packages/6a/34/cd29f4dd8a23ce45f2b8ce9631ff2d4205fb74eddb412a3dc4fd1e4aa800/certifi-2022.9.14-py3-none-any.whl
-        sha256: e232343de1ab72c2aa521b625c80f699e356830fd0e2c620b465b304b17b0516
+        url: https://files.pythonhosted.org/packages/71/4c/3db2b8021bd6f2f0ceb0e088d6b2d49147671f25832fb17970e9b583d742/certifi-2022.12.7-py3-none-any.whl
+        sha256: 4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18
         x-checker-data:
           name: certifi
           packagetype: bdist_wheel
@@ -55,11 +55,11 @@ modules:
     buildsystem: simple
     build-commands:
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "watchdog==2.1.9" --no-build-isolation
+        --prefix=${FLATPAK_DEST} "watchdog==2.2.0" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/42/f7/da8e889f8626786eac9454e8d2718fc79359ed517be20cdd50c647167d39/watchdog-2.1.9.tar.gz
-        sha256: 43ce20ebb36a51f21fa376f76d1d4692452b2527ccd601950d69ed36b9e21609
+        url: https://files.pythonhosted.org/packages/c3/fb/bd960970258366b0704307ccd12617d64201407bfb6d31ae412d2762ccf1/watchdog-2.2.0.tar.gz
+        sha256: 83cf8bc60d9c613b66a4c018051873d6273d9e45d040eed06d6a96241bd8ec01
         x-checker-data:
           name: watchdog
           type: pypi
